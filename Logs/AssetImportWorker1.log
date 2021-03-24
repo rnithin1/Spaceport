@@ -595,3 +595,128 @@ System memory in use after: 132.9 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1665.
 Total: 1.793860 ms (FindLiveObjects: 0.256965 ms CreateObjectMapping: 0.037450 ms MarkObjects: 1.431280 ms  DeleteObjects: 0.065761 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 590.100824 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af99d6a9eeba08a3610f3e4a0a668621') in 0.360985 seconds
+  Import took 0.364769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.610592 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf3a416a8e2266f82448687c615ef22') in 0.019009 seconds
+  Import took 0.023560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.281300 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6232644c924e0aabf85a225ea05c82e8') in 0.120327 seconds
+  Import took 0.123165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.850623 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a542781ca5e461ff6160281cdb30f1c1') in 0.018131 seconds
+  Import took 0.021605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.352497 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2205b3d7d09a8e25437190d858c0da1d') in 0.041500 seconds
+  Import took 0.047164 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001905 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.315 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1115 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1669.
+Total: 2.644454 ms (FindLiveObjects: 0.301068 ms CreateObjectMapping: 0.059922 ms MarkObjects: 2.207316 ms  DeleteObjects: 0.072022 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000422 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.427 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1115 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1672.
+Total: 2.507641 ms (FindLiveObjects: 0.225602 ms CreateObjectMapping: 0.059542 ms MarkObjects: 2.146633 ms  DeleteObjects: 0.073439 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.894669 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b980898cbbcea6bf1666beefe081966') in 0.152215 seconds
+  Import took 0.156154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.665887 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(1d95557cc2327425bbe4bb5327f023d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3de7def2ffc4c0da5e43d244b02156') in 0.026654 seconds
+  Import took 0.029838 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.249 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1115 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.6 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1676.
+Total: 2.495895 ms (FindLiveObjects: 0.256213 ms CreateObjectMapping: 0.052207 ms MarkObjects: 2.117487 ms  DeleteObjects: 0.068358 ms)
+
