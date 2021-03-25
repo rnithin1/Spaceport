@@ -98,3 +98,73 @@ C# parse time         : 404ms
 candidates check time : 48ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 3/24/2021 7:51:37 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 270.725ms
+moved types parse time: 69ms
+candidates parse time : 2ms
+C# parse time         : 497ms
+candidates check time : 51ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:02:46 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 201.716ms
+moved types parse time: 78ms
+candidates parse time : 1ms
+C# parse time         : 399ms
+candidates check time : 52ms
+console write time    : 6ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:29:43 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 310.181ms
+moved types parse time: 86ms
+candidates parse time : 1ms
+C# parse time         : 481ms
+candidates check time : 44ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:31:06 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 197.782ms
+moved types parse time: 68ms
+candidates parse time : 1ms
+C# parse time         : 516ms
+candidates check time : 53ms
+console write time    : 3ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:31:33 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 259.228ms
+moved types parse time: 68ms
+candidates parse time : 1ms
+C# parse time         : 396ms
+candidates check time : 50ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:52:48 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 233.553ms
+moved types parse time: 89ms
+candidates parse time : 1ms
+C# parse time         : 423ms
+candidates check time : 54ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 3/24/2021 9:54:24 PM : Starting /Users/arielsharon/Documents/Unity/2020.3.1f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 226.949ms
+moved types parse time: 87ms
+candidates parse time : 1ms
+C# parse time         : 396ms
+candidates check time : 39ms
+console write time    : 1ms
+

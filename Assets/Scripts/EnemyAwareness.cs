@@ -5,12 +5,36 @@ using UnityEngine;
 public class EnemyAwareness : MonoBehaviour
 {
     public Material aggroMat;
+    public bool isAggro;
+    public float awarenessRadius = 8f;
 
-    void onTriggerEnter(Collider other)
+    private Transform playerTransform;
+
+    private void Start()
     {
-        if (other.transform.CompareTag("Player"))
+        playerTransform = FindObjectOfType<PlayerMove>().transform;
+    }
+
+    private void Update()
+    {
+        var dist = Vector3.Distance(transform.position, playerTransform.position);
+
+        if (dist < awarenessRadius)
+        {
+            isAggro = true;
+        }
+
+        if (isAggro)
         {
             GetComponent<MeshRenderer>().material = aggroMat;
         }
     }
+
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.transform.CompareTag("Playe r"))
+    //    {
+    //        isAggro = true;
+    //    }
+    //}
 }

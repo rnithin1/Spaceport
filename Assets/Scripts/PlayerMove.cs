@@ -79,7 +79,6 @@ public class PlayerMove : MonoBehaviour
         //Debug.Log(myGravity * Time.deltaTime);
         previous_frame_y = movementVector.y;
 
-        Debug.Log(movementVector);
         //Debug.Log(isGrounded());
     }
 
