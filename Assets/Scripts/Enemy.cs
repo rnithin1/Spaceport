@@ -15,20 +15,16 @@ public class Enemy : MonoBehaviour
     private Renderer spriteRenderer;
     private MaterialPropertyBlock spriteMaterialPropertyBlock;
 
-    private Transform cameraTransform;
-    private Quaternion cameraYRotation;
-
     private bool isMoving = false;
     private bool wasMovingLastFrame = true;
 
-    private float speed;
+    public float speed;
     private Vector3 direction; 
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(CalcVelocity());
-        cameraTransform = Camera.main.transform;
         spriteRenderer = GetComponent<Renderer>();
         spriteMaterialPropertyBlock = new MaterialPropertyBlock();
     }
@@ -47,8 +43,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(speed);
-        MoveAndUpdateSprite();
+        //MoveAndUpdateSprite();
         updateHealth();
     }
 
@@ -58,33 +53,33 @@ public class Enemy : MonoBehaviour
         enemyHealth -= damage;
     }
 
-    void MoveAndUpdateSprite()
-    {
-        cameraYRotation = Quaternion.Euler(0, cameraTransform.rotation.eulerAngles.y, 0);
+    //void MoveAndUpdateSprite()
+    //{
+    //    cameraYRotation = Quaternion.Euler(0, cameraTransform.rotation.eulerAngles.y, 0);
 
-        if (speed > 0.1f)
-        {
-            isMoving = true;
-        }
-        else
-        {
-            speed = 0;
-            isMoving = false;
-        }
+    //    if (speed > 0.1f)
+    //    {
+    //        isMoving = true;
+    //    }
+    //    else
+    //    {
+    //        speed = 0;
+    //        isMoving = false;
+    //    }
 
-        if (direction.magnitude > 0)
-        {
-            transform.rotation = Quaternion.LookRotation(direction);
-        }
+    //    if (direction.magnitude > 0)
+    //    {
+    //        transform.rotation = Quaternion.LookRotation(direction);
+    //    }
 
-        if (isMoving != wasMovingLastFrame)
-        {
-            spriteMaterialPropertyBlock.SetFloat("_AnimFPS", isMoving ? SpriteWalkFPS : 0);
-            spriteRenderer.SetPropertyBlock(spriteMaterialPropertyBlock);
-        }
+    //    if (isMoving != wasMovingLastFrame)
+    //    {
+    //        spriteMaterialPropertyBlock.SetFloat("_AnimFPS", isMoving ? SpriteWalkFPS : 0);
+    //        spriteRenderer.SetPropertyBlock(spriteMaterialPropertyBlock);
+    //    }
 
-        wasMovingLastFrame = isMoving;
-    }
+    //    wasMovingLastFrame = isMoving;
+    //}
 
     void updateHealth()
     {
