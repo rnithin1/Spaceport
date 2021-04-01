@@ -31,9 +31,10 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (enemyAwareness.isAggro)
         {
-            transform.LookAt(playerTransform);
+            //transform.LookAt(playerTransform);
         }
         Vector3 e_angle = transform.rotation.eulerAngles;
+        Debug.Log(e_angle);
         float enemyAngle = e_angle.y;
 
         if (enemyAngle >= 60f && enemyAngle < 120f)
