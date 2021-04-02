@@ -16,7 +16,6 @@ public class Enemy : MonoBehaviour
     private MaterialPropertyBlock spriteMaterialPropertyBlock;
 
     private bool isMoving = false;
-    private bool wasMovingLastFrame = true;
 
     public float speed;
     private Vector3 direction; 
@@ -43,7 +42,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //MoveAndUpdateSprite();
+        isMoving = speed > 0.1f;
         updateHealth();
     }
 
@@ -53,34 +52,6 @@ public class Enemy : MonoBehaviour
         enemyHealth -= damage;
         updateHealth();
     }
-
-    //void MoveAndUpdateSprite()
-    //{
-    //    cameraYRotation = Quaternion.Euler(0, cameraTransform.rotation.eulerAngles.y, 0);
-
-    //    if (speed > 0.1f)
-    //    {
-    //        isMoving = true;
-    //    }
-    //    else
-    //    {
-    //        speed = 0;
-    //        isMoving = false;
-    //    }
-
-    //    if (direction.magnitude > 0)
-    //    {
-    //        transform.rotation = Quaternion.LookRotation(direction);
-    //    }
-
-    //    if (isMoving != wasMovingLastFrame)
-    //    {
-    //        spriteMaterialPropertyBlock.SetFloat("_AnimFPS", isMoving ? SpriteWalkFPS : 0);
-    //        spriteRenderer.SetPropertyBlock(spriteMaterialPropertyBlock);
-    //    }
-
-    //    wasMovingLastFrame = isMoving;
-    //}
 
     void updateHealth()
     {

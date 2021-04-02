@@ -71,15 +71,11 @@ public class PlayerMove : MonoBehaviour
         } 
 
         if (Input.GetKeyDown("space") && isGrounded())
-        {
-            //Debug.Log(Mathf.Sqrt(JumpHeight * -2f * myGravity));
+        { 
             movementVector.y = Mathf.Sqrt(JumpHeight * -2f * myGravity);
         }
 
-        //Debug.Log(myGravity * Time.deltaTime);
         previous_frame_y = movementVector.y;
-
-        //Debug.Log(isGrounded());
     }
 
     void MovePlayer()
