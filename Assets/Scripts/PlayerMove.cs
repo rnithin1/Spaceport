@@ -8,6 +8,9 @@ public class PlayerMove : MonoBehaviour
     public float momentumDamping = 5f;
     public float JumpHeight = 1f;
 
+    public float air_modifier = 1f;
+    public float sneak_modifier = 0.2f;
+
     private CharacterController myCC;
 
     public GameObject playerModel;
@@ -64,16 +67,18 @@ public class PlayerMove : MonoBehaviour
 
         if ((Input.GetKey("left shift") || Input.GetKey("right shift")) && isGrounded())
         {
-            Debug.Log("Here");
-            movementVector = (inputVector * playerSpeed * 0.2f);
-            movementVector.y = previous_frame_y;
+            movementVector = (inputVector * playerSpeed * sneak_modifier);
         }
-        else
+        else if (isGrounded())
         {
             movementVector = (inputVector * playerSpeed);
-            movementVector.y = previous_frame_y;
         }
-        
+        else if (!isGrounded()) // This line controls air strafing, could be changed
+        {
+            movementVector = (inputVector * playerSpeed);
+        }
+        movementVector.y = previous_frame_y;
+
 
         if (isGrounded() && movementVector.y < 0)
         {
