@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
     private bool isWalking;
     public LayerMask Ground;
 
-    private float GroundDistance = 1.2f;
+    private float GroundDistance = 1.5f;
     private Transform groundChecker;
 
     private float previous_frame_y;
@@ -94,6 +94,19 @@ public class PlayerMove : MonoBehaviour
     private bool isGrounded()
     {
         groundChecker = playerModel.transform;
-        return Physics.CheckSphere(groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
+        float rayDistance = 100;
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, -transform.up, out hit, rayDistance))
+        {
+            if (hit.distance > GroundDistance)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        return false; // Physics.CheckSphere(groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
     }
 }

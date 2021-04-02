@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637529238470000000
+      ticks: 637529308940000000
     m_Hash: 1465267015
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3197,8 +3197,18 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.1.0-preview.4
+        - 0.1.0-preview.8
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
         - 1.0.3
         compatible:
+        - 0.1.0-preview.4
+        - 0.1.0-preview.8
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
         - 1.0.3
         verified: 1.0.3
       dependencies: []
@@ -3216,12 +3226,12 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637300096300000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+        url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
         revision: 473664ccba1496294b741cf169740a5d54b3d0b6
         path: 
   m_LocalPackages:
