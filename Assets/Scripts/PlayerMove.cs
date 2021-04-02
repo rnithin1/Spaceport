@@ -62,8 +62,18 @@ public class PlayerMove : MonoBehaviour
             isWalking = false;
         }
 
-        movementVector = (inputVector * playerSpeed);
-        movementVector.y = previous_frame_y;
+        if ((Input.GetKey("left shift") || Input.GetKey("right shift")) && isGrounded())
+        {
+            Debug.Log("Here");
+            movementVector = (inputVector * playerSpeed * 0.2f);
+            movementVector.y = previous_frame_y;
+        }
+        else
+        {
+            movementVector = (inputVector * playerSpeed);
+            movementVector.y = previous_frame_y;
+        }
+        
 
         if (isGrounded() && movementVector.y < 0)
         {
