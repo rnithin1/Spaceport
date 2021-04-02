@@ -65,17 +65,10 @@ public class PlayerMove : MonoBehaviour
             isWalking = false;
         }
 
+        movementVector = (inputVector * playerSpeed);
         if ((Input.GetKey("left shift") || Input.GetKey("right shift")) && isGrounded())
         {
-            movementVector = (inputVector * playerSpeed * sneak_modifier);
-        }
-        else if (isGrounded())
-        {
-            movementVector = (inputVector * playerSpeed);
-        }
-        else if (!isGrounded()) // This line controls air strafing, could be changed
-        {
-            movementVector = (inputVector * playerSpeed);
+            movementVector *= sneak_modifier;
         }
         movementVector.y = previous_frame_y;
 
