@@ -54,25 +54,29 @@ public class Gun : MonoBehaviour
         GetComponent<AudioSource>().Play();
 
         // Damage all enemies that are visible on the screen (code in EnemyManager)
-        foreach (var enemy in enemyManager.enemiesInTrigger)
+        List<Enemy> iter_list = new List<Enemy>(enemyManager.enemiesInTrigger);
+        foreach (var enemy in iter_list)
         {
-            // get direction to enemy, send out a raycast
-            var dir = enemy.transform.position - transform.position;
-            RaycastHit hit;
-
-            if (Physics.Raycast(transform.position, dir, out hit, range * 1.5f, raycastLayerMask))
+            if (enemy != null)
             {
-                if (hit.transform == enemy.transform)
-                {
-                    float dist = Vector3.Distance(enemy.transform.position, transform.position);
+                // get direction to enemy, send out a raycast
+                var dir = enemy.transform.position - transform.position;
+                RaycastHit hit;
 
-                    if (dist > range * 0.5f)
+                if (Physics.Raycast(transform.position, dir, out hit, range * 1.5f, raycastLayerMask))
+                {
+                    if (hit.transform == enemy.transform)
                     {
-                        enemy.takeDamage(smallDamage);
-                    }
-                    else
-                    {
-                        enemy.takeDamage(bigDamage);
+                        float dist = Vector3.Distance(enemy.transform.position, transform.position);
+
+                        if (dist > range * 0.5f)
+                        {
+                            enemy.takeDamage(smallDamage);
+                        }
+                        else
+                        {
+                            enemy.takeDamage(bigDamage);
+                        }
                     }
                 }
             }

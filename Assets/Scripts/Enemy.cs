@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(gunHitEffect, transform.position, Quaternion.identity);
         enemyHealth -= damage;
+        updateHealth();
     }
 
     //void MoveAndUpdateSprite()
@@ -85,7 +86,10 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
-            enemyManager.RemoveEnemy(this);
+            if (enemyManager.enemiesInTrigger.Contains(this))
+            {
+                enemyManager.RemoveEnemy(this);
+            }
             Destroy(this.gameObject);
         }
     }
