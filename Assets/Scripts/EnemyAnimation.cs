@@ -32,6 +32,7 @@ public class EnemyAnimation : MonoBehaviour
         if (enemyAwareness.isAggro)
         {
             //transform.LookAt(playerTransform);
+            return 0;
         }
         Vector3 e_angle = transform.rotation.eulerAngles;
         Debug.Log(e_angle);
