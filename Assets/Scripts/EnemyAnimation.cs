@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-
+    [SerializeField] private Sprite[] images = new Sprite[4];
     private Transform playerTransform;
     private EnemyAwareness enemyAwareness;
 
@@ -12,9 +12,11 @@ public class EnemyAnimation : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     private Animator m_Animator;
+    private Enemy enemy;
 
     void Start()
-    {
+    { 
+        enemy = GetComponent<Enemy>();
         enemyAwareness = GetComponent<EnemyAwareness>();
         playerTransform = FindObjectOfType<PlayerMove>().transform;
         m_Animator = GetComponent<Animator>();
@@ -23,7 +25,18 @@ public class EnemyAnimation : MonoBehaviour
     void Update()
     {
         currentState = GetAngleIndex();
-        m_Animator.SetInteger("currentState", currentState);
+        Debug.Log(enemy.speed);
+        if (enemy.isMoving)
+        {
+            m_Animator.enabled = true;
+            m_Animator.SetInteger("currentState", currentState);
+        }
+        else
+        {
+            m_Animator.enabled = false;
+            GetComponent<SpriteRenderer>().sprite = images[currentState];
+        }
+        
         //Debug.Log(GetAngleIndex());
     }
 
@@ -35,7 +48,7 @@ public class EnemyAnimation : MonoBehaviour
             return 0;
         }
         Vector3 e_angle = transform.rotation.eulerAngles;
-        Debug.Log(e_angle);
+        //Debug.Log(e_angle);
         float enemyAngle = e_angle.y;
 
         if (enemyAngle >= 60f && enemyAngle < 120f)

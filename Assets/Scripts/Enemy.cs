@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     private Renderer spriteRenderer;
     private MaterialPropertyBlock spriteMaterialPropertyBlock;
 
-    private bool isMoving = false;
+    public bool isMoving = false;
 
     public float speed;
     private Vector3 direction; 
@@ -33,9 +33,9 @@ public class Enemy : MonoBehaviour
         while (Application.isPlaying)
         {
             Vector3 lastPos = transform.position;
-            yield return new WaitForFixedUpdate();
+            yield return new WaitForSeconds(0.1f);
             direction = lastPos - transform.position;
-            speed = Vector3.Distance(transform.position, lastPos) / Time.fixedDeltaTime;
+            speed = Vector3.Distance(transform.position, lastPos) / 0.1f;
         }
     }
 
