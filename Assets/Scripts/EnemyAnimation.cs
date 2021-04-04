@@ -25,7 +25,6 @@ public class EnemyAnimation : MonoBehaviour
     void Update()
     {
         currentState = GetAngleIndex();
-        Debug.Log(enemy.speed);
         if (enemy.isMoving)
         {
             m_Animator.enabled = true;
