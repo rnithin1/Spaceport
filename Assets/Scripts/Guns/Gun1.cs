@@ -4,6 +4,8 @@ public class Gun1 : GunClass
 {
     [SerializeField] private string _name;
     [SerializeField] private Sprite _icon, _image;
+    [SerializeField] private AudioClip _se;
+    private const float _RELOAD_TIME = 0.2f;
 
     public override string Name
     {
@@ -21,6 +23,18 @@ public class Gun1 : GunClass
     {
         get { return _image; }
         set { Image = _image; }
+    }
+
+    public override float ReloadTime
+    {
+        get { return _RELOAD_TIME; }
+        set { ReloadTime = _RELOAD_TIME; }
+    }
+
+    public override AudioClip SE
+    {
+        get { return _se; }
+        set { SE = _se; }
     }
 
     public override void Fire()

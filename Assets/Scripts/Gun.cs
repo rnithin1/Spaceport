@@ -49,9 +49,7 @@ public class Gun : MonoBehaviour
             enemyCollider.GetComponent<EnemyAwareness>().isAggro = true;
         }
 
-        // Play gunshot audio 
-        GetComponent<AudioSource>().Stop();
-        GetComponent<AudioSource>().Play();
+         
 
         // Damage all enemies that are visible on the screen (code in EnemyManager)
         List<Enemy> iter_list = new List<Enemy>(enemyManager.enemiesInTrigger);
