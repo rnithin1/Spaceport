@@ -1674,8 +1674,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1594166420}
   - component: {fileID: 1594166423}
-  - component: {fileID: 1594166422}
   - component: {fileID: 1594166421}
+  - component: {fileID: 1594166422}
   m_Layer: 5
   m_Name: Scripts
   m_TagString: Untagged
@@ -1727,13 +1727,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1594166419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80721ff64b24db34ca82be63e51c3a75, type: 3}
+  m_Script: {fileID: 11500000, guid: daa9e0a52b8d7f64ba6dcde7436734ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Gun2
-  _icon: {fileID: 21300000, guid: 6683ebaa682f9be40a643ca502a4ce40, type: 3}
-  _image: {fileID: 21300000, guid: ee971d047b9830549ae72cb20ee09233, type: 3}
-  _se: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0da48e57e25bfe84b83eed96b22aa0fe, type: 3}
+  _image: {fileID: 0}
+  _bazookaBallet: {fileID: 2949582311376573112, guid: aa0937f8ce6cfaf42907747bbf9d4aab, type: 3}
+  _se: {fileID: 8300000, guid: 4d46bd898e288434f849d5518eddfa89, type: 3}
 --- !u!114 &1594166423
 MonoBehaviour:
   m_ObjectHideFlags: 0
