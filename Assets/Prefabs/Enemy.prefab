@@ -19,8 +19,8 @@ GameObject:
   - component: {fileID: 6392823774443150300}
   - component: {fileID: 6392823774443150301}
   m_Layer: 7
-  m_Name: Enemy 1
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +146,8 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   gunHitEffect: {fileID: 1512641582322742715, guid: 597633441dead434ca624176a41ac253, type: 3}
   SpriteWalkFPS: 5
+  isMoving: 0
+  speed: 0
 --- !u!114 &6889108319229742807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9803e85ffd1b441dc81721bbd5d5cd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroMat: {fileID: 2100000, guid: c7718f69eebb94aceb9e520edb53f9d0, type: 2}
   isAggro: 0
   awarenessRadius: 8
 --- !u!195 &6392823774443150300

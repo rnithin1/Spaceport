@@ -8,6 +8,8 @@ public abstract class GunClass : MonoBehaviour
     public abstract string Name { get; set; }
     public abstract Sprite Icon { get; set; }
     public abstract Sprite Image { get; set; }
+    public abstract AudioClip SE { get; set; }
+    public abstract float ReloadTime { get; set; }
 
     public abstract void Fire();
     
