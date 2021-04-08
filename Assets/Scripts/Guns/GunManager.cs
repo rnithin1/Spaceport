@@ -8,7 +8,7 @@ public class GunManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) Fire();
+        if(Input.GetMouseButtonDown(0)) Fire();
     }
 
     private void Fire()
