@@ -59,12 +59,9 @@ public class Pen : GunClass
            Input.mousePosition.y,
            Camera.main.WorldToScreenPoint(player.transform.position).z + DISTANCE
            ));
-        // line size
-        // float width = widthSlider.value / 2 + 0.03f;
-        float width = 1;
         
         GameObject pen = Instantiate(_penBallet, pos, Quaternion.identity);
-        pen.transform.localScale = new Vector3(width, width, width);
+        
     }
 
 }

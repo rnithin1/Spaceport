@@ -56,14 +56,12 @@ public class PenBallet : MonoBehaviour
         line.transform.SetParent(pen.transform);
         MeshCollider meshCollider = line.AddComponent<MeshCollider>();
         var trailRenderer = pen.GetComponent<TrailRenderer>();
-        // Meshが無いとBakeMeshできないので、適当なMeshインスタンスを生成
+        // Create a mesh because we can't bake mesh without a mesh.
         Mesh mesh = new Mesh();
         trailRenderer.BakeMesh(mesh, Camera.main, true);
         meshCollider.sharedMesh = mesh;
-        // Ray以外は当たらないようにする
         meshCollider.convex = true;
-        //meshCollider.isTrigger = true;
-        // 終点に球のゲームオブジェクトが見えてるとかっこ悪いので透明化
+        // Make the sphere unvisible.
         pen.GetComponent<Renderer>().enabled = false;
     }
 
