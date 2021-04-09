@@ -3116,6 +3116,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3805783479657232674, guid: 10a1936e0858a4bc8a39ce2c82e206c8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805783479657232674, guid: 10a1936e0858a4bc8a39ce2c82e206c8, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -3125,7 +3129,7 @@ PrefabInstance:
       objectReference: {fileID: 1804930651}
     - target: {fileID: 9196948768655276312, guid: 10a1936e0858a4bc8a39ce2c82e206c8, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9196948768655276313, guid: 10a1936e0858a4bc8a39ce2c82e206c8, type: 3}
       propertyPath: m_Name
@@ -3478,11 +3482,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1594166420}
   - component: {fileID: 1594166423}
-  - component: {fileID: 1594166421}
   - component: {fileID: 1594166422}
+  - component: {fileID: 1594166421}
   m_Layer: 5
-  m_Name: Scripts
-  m_TagString: Untagged
+  m_Name: GunScripts
+  m_TagString: GunScripts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3515,13 +3519,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1594166419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d406ecaa835692940929b40e6cd996e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e770061796377a4b827090f4e00fad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Gun3
-  _icon: {fileID: 21300000, guid: 323ebca4bc6337b4e8e92bd9f834efb1, type: 3}
-  _image: {fileID: 21300000, guid: 04a2c716af3deef4086598089caba855, type: 3}
-  _se: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a94dedace401f8246a1d3a4b155db04d, type: 3}
+  _image: {fileID: 21300000, guid: 65dd621634f7dc044ab2140f5cc6e8e1, type: 3}
+  _penBallet: {fileID: 541750493215357448, guid: 57b6379761f95804ea072416146a81c6, type: 3}
+  _se: {fileID: 8300000, guid: 4d46bd898e288434f849d5518eddfa89, type: 3}
 --- !u!114 &1594166422
 MonoBehaviour:
   m_ObjectHideFlags: 0
