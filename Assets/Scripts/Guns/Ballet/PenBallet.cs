@@ -65,6 +65,14 @@ public class PenBallet : MonoBehaviour
         //meshCollider.isTrigger = true;
         // 終点に球のゲームオブジェクトが見えてるとかっこ悪いので透明化
         pen.GetComponent<Renderer>().enabled = false;
+        AddRigidbody(line);
+    }
+
+    private void AddRigidbody(GameObject line)
+    {
+        var rb = line.AddComponent<Rigidbody>();
+        //rb.freezeRotation = true;
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
 }
