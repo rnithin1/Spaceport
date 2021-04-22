@@ -8,7 +8,7 @@ public class Bazooka : GunClass
     [SerializeField] private GameObject _bazookaBallet;
     private string _name = "Bazooka";
     [SerializeField] private AudioClip _se;
-    private const float _RELOAD_TIME = 3f;
+    private const float _RELOAD_TIME = 1f;
 
     private bool _reloaded = true;
 
