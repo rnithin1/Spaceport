@@ -24,16 +24,26 @@ public class GunSwitch : MonoBehaviour
 
     private void SwitchGuns()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Tab))
         {
             _id = GetIdPlus(1);
             ChangeIcons();
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             _id = GetIdPlus(-1);
             ChangeIcons();
         }
+
+        float scroll = Input.mouseScrollDelta.y;
+        Debug.Log(scroll);
+        int scrollInt = 0;
+        if (scroll > 0) scrollInt = (int)1;
+        else if (scroll < 0) scrollInt = (int)-1;
+        
+        if (scrollInt == 0) return;
+        _id = GetIdPlus(scrollInt);
+        ChangeIcons();
     }
 
     public GunClass GetGunUsing()
