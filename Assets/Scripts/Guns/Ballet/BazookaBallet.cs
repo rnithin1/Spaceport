@@ -5,11 +5,12 @@ using UnityEngine;
 // This is attached on the Ballete prefab
 public class BazookaBallet : MonoBehaviour
 {
+    [SerializeField] private GameObject _bazookaExplosion;
     private float _lifeTime;
     private float _speed;
 
-    private const float MAX_LIFE_TIME = 1;
-    private const float MAX_SPEED = 1;
+    private const float MAX_LIFE_TIME = 3;
+    private const float MAX_SPEED = 0.7f;
     private const float DAMAGE_RATE = 10f;
 
 
@@ -21,14 +22,24 @@ public class BazookaBallet : MonoBehaviour
         transform.Translate(0, _speed, 0);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Player") return;
+            var pos = transform.position;
+        Instantiate(_bazookaExplosion, pos, Quaternion.identity);
+        Destroy(gameObject);
+        if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Hit");
-            var enemy = other.GetComponent<Enemy>();
-            enemy.takeDamage(_speed * DAMAGE_RATE);
+
+            //Debug.Log("Hit");
+            //var enemy = other.GetComponent<Enemy>();
+            //enemy.takeDamage(_speed * DAMAGE_RATE);
         }
+    }
+
+    private void OnCollisionEnter(Collider other)
+    {
+        
         
     }
 }
