@@ -13,6 +13,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Ballet/QuickGunBallet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/GunSwitch.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rYwrPPKmZTbsUAle4KWveCX1Ij" />
@@ -59,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619166529578</updated>
       <workItem from="1619166531810" duration="972000" />
+      <workItem from="1619245651551" duration="1994000" />
     </task>
     <servers />
   </component>

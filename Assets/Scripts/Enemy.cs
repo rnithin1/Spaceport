@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
+    [SerializeField] private Image healthBar;
     public EnemyManager enemyManager;
     private float enemyHealth = 2f;
+    private const float MAX_HEALTH = 2f;
 
     public GameObject gunHitEffect;
     public float SpriteWalkFPS = 5f;
@@ -18,11 +21,12 @@ public class Enemy : MonoBehaviour
     public bool isMoving = false;
 
     public float speed;
-    private Vector3 direction; 
+    private Vector3 direction;
 
     // Start is called before the first frame update
     void Start()
     {
+        enemyHealth = MAX_HEALTH;
         StartCoroutine(CalcVelocity());
         spriteRenderer = GetComponent<Renderer>();
         spriteMaterialPropertyBlock = new MaterialPropertyBlock();
@@ -51,6 +55,7 @@ public class Enemy : MonoBehaviour
         Instantiate(gunHitEffect, transform.position, Quaternion.identity);
         enemyHealth -= damage;
         updateHealth();
+        UpdateHealthBar();
     }
 
     void updateHealth()
@@ -64,4 +69,19 @@ public class Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    private void UpdateHealthBar()
+    {
+        // 0.0 ~ 1.0
+        float rate = enemyHealth / MAX_HEALTH;
+        // Change the length of bar
+        healthBar.fillAmount = rate;
+        // Change the color of bar
+        Color color;
+        if(rate > 0.5f) color = Color.green;
+        else if(rate > 0.2F) color = Color.yellow;
+        else color = Color.red;
+        healthBar.color = color;
+    }
+    
 }
