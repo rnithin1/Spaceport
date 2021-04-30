@@ -28,7 +28,7 @@ public class Teleporter : MonoBehaviour
             float distance = Vector3.Distance(closestPoint, other.transform.position);
             Debug.Log(distance);
             charController.enabled = false;
-            Vector3 new_pos = other.transform.position + 100 * distance * other.transform.forward;
+            Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
             charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
             charController.enabled = true;
             //other.transform.Translate(5 * distance * other.transform.forward);
