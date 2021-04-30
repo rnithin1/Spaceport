@@ -36,7 +36,6 @@ public class GunSwitch : MonoBehaviour
         }
 
         float scroll = Input.mouseScrollDelta.y;
-        Debug.Log(scroll);
         int scrollInt = 0;
         if (scroll > 0) scrollInt = (int)1;
         else if (scroll < 0) scrollInt = (int)-1;
