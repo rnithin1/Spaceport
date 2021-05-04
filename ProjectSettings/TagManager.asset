@@ -41,9 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: FadeToBlack
-    uniqueID: 2482850187
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Gun Select
+    uniqueID: 521471905
+    locked: 0
+  - name: FadeToBlack
+    uniqueID: 2482850187
     locked: 0
