@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Teleporter : MonoBehaviour
 {
-
+    public Canvas canvas;
     private Collider coll;
+    private float timeToWait = 0.5f;
+    private float done = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,17 +24,34 @@ public class Teleporter : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            CharacterController charController = other.GetComponent<CharacterController>();
-            //other.transform.LookAt(transform);
-            Vector3 closestPoint = coll.ClosestPointOnBounds(other.transform.position);
-            float distance = Vector3.Distance(closestPoint, other.transform.position);
-            Debug.Log(distance);
-            charController.enabled = false;
-            Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
-            charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
-            charController.enabled = true;
-            //other.transform.Translate(5 * distance * other.transform.forward);
-            //other.transform.RotateAround(transform.position, transform.up, 180);
+            if (Time.time > done)
+            {
+                Time.timeScale = 0f;
+                done = Time.time + timeToWait;
+                StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(true));
+                CharacterController charController = other.GetComponent<CharacterController>();
+                charController.enabled = false;
+                Vector3 closestPoint = coll.ClosestPointOnBounds(other.transform.position);
+                LookAtWallNormal(other);
+                float distance = Vector3.Distance(closestPoint, other.transform.position);
+                //Debug.Log(distance);
+                Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
+                charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
+                charController.enabled = true;
+                StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
+                Time.timeScale = 1f;
+
+            }
+        }
+    }
+
+    void LookAtWallNormal(Collider other)
+    {
+        float rayDistance = 100;
+        RaycastHit hit;
+        if (Physics.Raycast(other.transform.position, transform.position, out hit, rayDistance))
+        {
+            other.transform.rotation = Quaternion.LookRotation(hit.normal);
         }
     }
 }
