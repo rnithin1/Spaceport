@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 public class DashPower : Power
 {
@@ -9,18 +10,13 @@ public class DashPower : Power
     {
         _isActive = true;
         _playerCondition = transform.parent.gameObject.GetComponent<PlayerCondition>(); 
-        _playerCondition.walkSpeedRate = 3;
+        _playerCondition.walkSpeedRate = 1.5f;
+        StartCoroutine(TimeUp());
     }
 
-    private void UpDate()
+    private IEnumerator TimeUp()
     {
-        if(!_isActive) return;
-        if(_timeLimit > 0) _timeLimit -= Time.deltaTime;
-        else
-        {
-            _isActive = false;
-            _timeLimit = 10;
-            _playerCondition.walkSpeedRate = 1;
-        }
+        yield return new WaitForSeconds(6);
+        _playerCondition.walkSpeedRate = 1;
     }
 }
