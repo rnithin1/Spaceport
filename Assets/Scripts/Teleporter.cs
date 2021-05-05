@@ -24,25 +24,25 @@ public class Teleporter : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            if (Time.time > done)
-            {
-                Time.timeScale = 0f;
-                done = Time.time + timeToWait;
-                StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(true));
-                CharacterController charController = other.GetComponent<CharacterController>();
-                charController.enabled = false;
-                Vector3 closestPoint = coll.ClosestPointOnBounds(other.transform.position);
-                LookAtWallNormal(other);
-                float distance = Vector3.Distance(closestPoint, other.transform.position);
-                //Debug.Log(distance);
-                Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
-                charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
-                charController.enabled = true;
-                StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
-                Time.timeScale = 1f;
-
-            }
+            Time.timeScale = 0f;
+            StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(true));
+            StartCoroutine(TeleportAndFadeIn(other));
+            Time.timeScale = 1f;
         }
+    }
+
+    IEnumerator TeleportAndFadeIn(Collider other)
+    {
+        yield return new WaitForSeconds(2);
+        CharacterController charController = other.GetComponent<CharacterController>();
+        charController.enabled = false;
+        Vector3 closestPoint = coll.ClosestPointOnBounds(other.transform.position);
+        LookAtWallNormal(other);
+        float distance = Vector3.Distance(closestPoint, other.transform.position);
+        Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
+        charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
+        charController.enabled = true;
+        StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
     }
 
     void LookAtWallNormal(Collider other)
@@ -51,7 +51,8 @@ public class Teleporter : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(other.transform.position, transform.position, out hit, rayDistance))
         {
-            other.transform.rotation = Quaternion.LookRotation(hit.normal);
+            // TODO: Need to fix this
+            // other.transform.rotation = Quaternion.LookRotation(hit.normal);
         }
     }
 }
