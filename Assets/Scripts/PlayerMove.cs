@@ -30,12 +30,15 @@ public class PlayerMove : MonoBehaviour
 
     private float previous_frame_y;
 
+    private PlayerCondition _playerCondition;
+
 
     // Start is called before the first frame update
     void Start()
     {
         previous_frame_y = 0f;
         myCC = GetComponent<CharacterController>();
+        _playerCondition = GetComponent<PlayerCondition>();
     }
 
     // Update is called once per frame
@@ -65,7 +68,7 @@ public class PlayerMove : MonoBehaviour
             isWalking = false;
         }
 
-        movementVector = (inputVector * playerSpeed);
+        movementVector = (inputVector * (playerSpeed * _playerCondition.walkSpeedRate));
         if ((Input.GetKey("left shift") || Input.GetKey("right shift")) && isGrounded())
         {
             movementVector *= sneak_modifier;
