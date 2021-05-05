@@ -61,9 +61,14 @@ public class Bazooka : GunClass
         StartCoroutine(nameof(Reload));
     }
 
+    private PlayerCondition _playerCondition;
+    void Start()
+    {
+        _playerCondition = GameObject.FindWithTag("Player").GetComponent<PlayerCondition>();
+    }
     private IEnumerator Reload()
     {
-        yield return new WaitForSeconds(_RELOAD_TIME);
+        yield return new WaitForSeconds(_RELOAD_TIME * _playerCondition.reloadRate);
         _reloaded = true;
     }
 }
