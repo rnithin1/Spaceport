@@ -50,11 +50,12 @@ public class PlayerMove : MonoBehaviour
     }
 
     void GetInput()
-    {
+    { 
         previous_frame_y += myGravity * Time.deltaTime;
         // Holding down WASD -> give -1, 0, 1
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
+            Debug.Log("Here");
             inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
             inputVector.Normalize();
             inputVector = playerModel.transform.TransformDirection(inputVector);
