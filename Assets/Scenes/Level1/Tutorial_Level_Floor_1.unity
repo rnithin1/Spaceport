@@ -3772,7 +3772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Hey there! What's going on?
+      value: Hey! Did you hear the big news yet?
       objectReference: {fileID: 0}
     - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
