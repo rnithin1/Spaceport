@@ -25,21 +25,10 @@ public class BazookaBallet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player") return;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("UI")) return;
             var pos = transform.position;
         Instantiate(_bazookaExplosion, pos, Quaternion.identity);
         Destroy(gameObject);
-        if (collision.gameObject.tag == "Enemy")
-        {
-
-            //Debug.Log("Hit");
-            //var enemy = other.GetComponent<Enemy>();
-            //enemy.takeDamage(_speed * DAMAGE_RATE);
-        }
     }
 
-    private void OnCollisionEnter(Collider other)
-    {
-        
-        
-    }
 }

@@ -26,6 +26,7 @@ public class QuickGunBallet : MonoBehaviour
         Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player") return;
         if (other.gameObject.tag == "Untagged") return;
+        if (other.gameObject.layer == LayerMask.NameToLayer("UI")) return;
         if(other.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit");

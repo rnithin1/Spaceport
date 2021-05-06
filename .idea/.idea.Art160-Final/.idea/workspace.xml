@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCondition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/Power.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/DashPower.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -28,7 +29,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/NoReload.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Power.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PickUpItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/QuickGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" />
@@ -37,6 +37,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Bazooka.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/ReloadLimitBreak.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/DashPower.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PickUpItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Ballet/BazookaBallet.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rYwrPPKmZTbsUAle4KWveCX1Ij" />
@@ -85,6 +89,7 @@
       <workItem from="1619166531810" duration="972000" />
       <workItem from="1619245651551" duration="1994000" />
       <workItem from="1620193806109" duration="18510000" />
+      <workItem from="1620315770682" duration="7670000" />
     </task>
     <servers />
   </component>
