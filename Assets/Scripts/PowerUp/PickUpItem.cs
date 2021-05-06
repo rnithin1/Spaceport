@@ -24,8 +24,9 @@ public class PickUpItem : MonoBehaviour
 
     private void PickUp()
     {
-        if (!Input.GetMouseButtonUp(1)) return;
-        if(_power == null) SetPower(id);
+        //if (!Input.GetMouseButtonUp(1)) return;
+        if (!Input.GetKeyDown(KeyCode.T)) return;
+        if (_power == null) SetPower(id);
         _power.Up();
         GameObject.FindWithTag(nameof(PowerUpUIController)).GetComponent<PowerUpUIController>().DisplayPowerUI(id);
         Destroy(transform.parent.gameObject);

@@ -511,7 +511,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5339768883538232451, guid: 9e12abfe26f164c9d9e8aa5552b35b55, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5339768883538232451, guid: 9e12abfe26f164c9d9e8aa5552b35b55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3213,99 +3213,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746865258}
   m_CullTransparentMesh: 1
---- !u!1001 &1797844050
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 146.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 117.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170763, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170767, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_Name
-      value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170767, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140623058424170773, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: enemyManager
-      value: 
-      objectReference: {fileID: 1258060373}
-    - target: {fileID: 3453531978856890049, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: isNPC
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453531978856890049, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: isEnemy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8103786134302617620, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: images.Array.data[0]
-      value: 
-      objectReference: {fileID: 6997741227164693895, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-    - target: {fileID: 8103786134302617620, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: images.Array.data[1]
-      value: 
-      objectReference: {fileID: 257391927967685840, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-    - target: {fileID: 8103786134302617620, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: images.Array.data[2]
-      value: 
-      objectReference: {fileID: 2094008302356111732, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-    - target: {fileID: 8103786134302617620, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: images.Array.data[3]
-      value: 
-      objectReference: {fileID: 4782866967625561254, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-    - target: {fileID: 8103786134302617625, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6997741227164693895, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
 --- !u!1 &1840296538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,9 +3762,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.name
+      value: Friend
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hey there! What's going on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I heard they were gonna assign us to our first missions soon...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Sounds exciting! I wonder if they're gonna send us both together?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Hail the country!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394675713796747344, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: And wake you up in the morning of course!
+      objectReference: {fileID: 0}
     - target: {fileID: 8911409480060363592, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8911409480060363592, guid: 3e087dc6978ec4f029b3c8c52d7d97e1, type: 3}
       propertyPath: m_LocalPosition.x
