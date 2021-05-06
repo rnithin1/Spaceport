@@ -31,9 +31,4 @@ public class BazookaBallet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collider other)
-    {
-        
-        
-    }
 }
