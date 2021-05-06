@@ -22,12 +22,6 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(isSpeaking);
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
         isSpeaking = true;
@@ -82,7 +76,6 @@ public class DialogueManager : MonoBehaviour
         {
             isSpeaking = false;
             animator.SetBool("isOpen", false);
-            Debug.Log("End of conversation");
         }
     }
 }
