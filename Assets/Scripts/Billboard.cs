@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    public GameObject player;
+    private Transform playerTransform;
+    private void Start()
+    {
+        playerTransform = FindObjectOfType<PlayerMove>().transform;
+    }
+
     void LateUpdate()
     {
-        var target = player.transform.position; //Camera.main.transform.position;
+        var target = playerTransform.position; //Camera.main.transform.position;
         target.y = transform.position.y;
         transform.LookAt(target);
     }

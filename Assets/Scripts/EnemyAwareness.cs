@@ -7,6 +7,7 @@ public class EnemyAwareness : MonoBehaviour
     // public Material aggroMat;
     public bool isAggro;
     public float awarenessRadius = 8f;
+    public bool isNPC; // enemy or NPC
 
     private Transform playerTransform;
 
@@ -19,7 +20,7 @@ public class EnemyAwareness : MonoBehaviour
     {
         var dist = Vector3.Distance(transform.position, playerTransform.position);
 
-        if (dist < awarenessRadius)
+        if (dist < awarenessRadius && !isNPC)
         {
             isAggro = true;
         }
