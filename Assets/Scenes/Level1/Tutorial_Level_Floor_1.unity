@@ -2257,7 +2257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140623058424170767, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1140623058424170773, guid: 765a40cf9bdd64660b5b6398b146543e, type: 3}
       propertyPath: enemyManager
@@ -2675,7 +2675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c483f4c6bbf9487cb1e01af3ce81621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &1971829733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3223,7 +3222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c483f4c6bbf9487cb1e01af3ce81621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &2067823211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,7 +3449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c483f4c6bbf9487cb1e01af3ce81621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &2073230984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3788,7 +3785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c483f4c6bbf9487cb1e01af3ce81621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &2110712357
 MonoBehaviour:
   m_ObjectHideFlags: 0
