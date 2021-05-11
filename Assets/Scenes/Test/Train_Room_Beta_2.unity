@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpriteLibraryAsset: {fileID: 11400000, guid: 4610d86ed054444748f06c927e8fa0fc, type: 2}
+  m_SpriteLibraryAsset: {fileID: 11400000, guid: df77d602d483b40f4a35aec4eea6ca0a, type: 2}
 --- !u!1001 &959683933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3202,7 +3202,7 @@ PrefabInstance:
     - target: {fileID: 522892860509220346, guid: 101f760803f784fc6a4cb2142cdb5cda, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6997741227164693895, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
+      objectReference: {fileID: -2021278502396738475, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
     - target: {fileID: 8590579750694800274, guid: 101f760803f784fc6a4cb2142cdb5cda, type: 3}
       propertyPath: m_labelHash
       value: 1.2479147e+32

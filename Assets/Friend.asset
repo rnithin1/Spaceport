@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
-  m_Name: Characters
+  m_Name: Friend
   m_EditorClassIdentifier: 
   m_Labels:
   - m_Name: Friend
@@ -64,54 +64,3 @@ MonoBehaviour:
     - m_Name: Right_3
       m_Hash: 39251394
       m_Sprite: {fileID: -7859620309693589793, guid: c14a4a84bf6d6461d85ce0d830588de5, type: 3}
-  - m_Name: Enemy
-    m_Hash: 979269037
-    m_CategoryList:
-    - m_Name: Front_0
-      m_Hash: 1959060192
-      m_Sprite: {fileID: 8689802408797995280, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Front_1
-      m_Hash: 63165046
-      m_Sprite: {fileID: -2153820298555145641, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Front_2
-      m_Hash: -1698004020
-      m_Sprite: {fileID: -8057583937642754650, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Front_3
-      m_Hash: -305286310
-      m_Sprite: {fileID: 9064438609629788077, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Left_0
-      m_Hash: -825914643
-      m_Sprite: {fileID: -3048740936550776154, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Left_1
-      m_Hash: -1178420613
-      m_Sprite: {fileID: 5879694419344743562, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Left_2
-      m_Hash: 550235073
-      m_Sprite: {fileID: 5089527920389816841, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Left_3
-      m_Hash: 1473043287
-      m_Sprite: {fileID: 2078242340213839251, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Back_0
-      m_Hash: 569071906
-      m_Sprite: {fileID: 1106577172830784437, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Back_1
-      m_Hash: 1458334132
-      m_Sprite: {fileID: -5349941513135283275, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Back_2
-      m_Hash: -807061490
-      m_Sprite: {fileID: 5427408106646227844, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Back_3
-      m_Hash: -1193146216
-      m_Sprite: {fileID: 5587942767728646481, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Right_0
-      m_Hash: -1688224648
-      m_Sprite: {fileID: 5213917985255474012, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Right_1
-      m_Hash: -329741074
-      m_Sprite: {fileID: 2675495944206093945, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Right_2
-      m_Hash: 1968299348
-      m_Sprite: {fileID: -1007595143703567115, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
-    - m_Name: Right_3
-      m_Hash: 39251394
-      m_Sprite: {fileID: 6091562301965099218, guid: ba28d66de71e849f38fb21d2ec0aff00, type: 3}
