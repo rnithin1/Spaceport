@@ -10,16 +10,18 @@ public class Patrol : MonoBehaviour
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
+    private DialogueManager dialogueManager;
 
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        dialogueManager = FindObjectOfType<DialogueManager>();
 
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
-        agent.autoBraking = false;
+        agent.autoBraking = true;
 
         GotoNextPoint();
     }
@@ -45,7 +47,13 @@ public class Patrol : MonoBehaviour
     {
         // Choose the next destination point when the agent gets
         // close to the current one.
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (dialogueManager.isSpeaking)
+        {
+            agent.SetDestination(transform.position);
+        }
+        else if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        {
             GotoNextPoint();
+        }
     }
 }
