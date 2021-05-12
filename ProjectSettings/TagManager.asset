@@ -9,6 +9,7 @@ TagManager:
   - GunScripts
   - Powers
   - PowerUpUIController
+  - MyHealthBar
   layers:
   - Default
   - TransparentFX
