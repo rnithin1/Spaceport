@@ -11,6 +11,9 @@ public class DialogueTrigger : MonoBehaviour
     private Dialogue dialogue;
     private bool isSpeaking;
     private bool hasSpokenOnce;
+    private bool isInTrigger;
+
+    public GameObject exclamation;
 
     private DialogueManager dialogueManager;
 
@@ -22,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (!System.String.IsNullOrEmpty(jsonString))
         {
-
+            hasSpokenOnce = false;
         }
         else
         {
@@ -32,6 +35,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public void Update()
     {
+        if (hasSpokenOnce && exclamation)
+        {
+            Destroy(exclamation);
+        }
         if (dialogueManager.isSpeaking && Input.GetKeyDown(KeyCode.F))
         {
             dialogueManager.DisplayNextSentence();
@@ -42,12 +49,22 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            isInTrigger = true;
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (isInTrigger && !dialogueManager.isSpeaking && Input.GetMouseButtonUp(1))
+        {
+            hasSpokenOnce = true;
             dialogueManager.StartDialogue(dialogue);
         }
     }
 
     public void OnTriggerExit()
     {
+        isInTrigger = false;
         dialogueManager.EndDialogue();
     }
 }

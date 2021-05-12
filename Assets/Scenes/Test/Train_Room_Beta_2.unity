@@ -2404,7 +2404,7 @@ GameObject:
   - component: {fileID: 1534963615}
   - component: {fileID: 1534963614}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Exclamation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3157,6 +3157,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3669024455985946638, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
+      propertyPath: exclamation
+      value: 
+      objectReference: {fileID: 1534963612}
     - target: {fileID: 4413159216911266578, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_Name
       value: NPC
