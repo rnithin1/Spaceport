@@ -10,6 +10,10 @@ public class PowerUpUIController : MonoBehaviour
     public bool[] slots = new bool[10];
     public void DisplayPowerUI(Powers.PowerId powerId)
     {
+        if (powerId == Powers.PowerId.Recover)
+        {
+            return;
+        }
         var ui = Instantiate(powerUpUI, transform);
         ui.GetComponent<PowerUpUI>().SetIcon(icons[(int)powerId], _names[(int)powerId]);
     }
