@@ -11,7 +11,9 @@ public class EnemyAwareness : MonoBehaviour
     public bool isNPC; // enemy or NPC
 
     [SerializeField] private Material[] lineColorMaterials;
+    
     private LineRenderer _lineRenderer;
+    private AudioSource _audioSource;
     private float _shootingTime;
     private Transform playerTransform;
     private bool _withinDistance;
@@ -23,6 +25,7 @@ public class EnemyAwareness : MonoBehaviour
     {
         playerTransform = FindObjectOfType<PlayerMove>().transform;
         _lineRenderer = GetComponent<LineRenderer>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -71,6 +74,7 @@ public class EnemyAwareness : MonoBehaviour
     {
         _lineRenderer.endWidth *= SHOOTING_WIDTH_RATE;
         _lineRenderer.material = lineColorMaterials[1];
+        _audioSource.Play();
         yield return new WaitForSeconds(0.05f);
         _lineRenderer.endWidth /= SHOOTING_WIDTH_RATE;
         _lineRenderer.material = lineColorMaterials[0];
