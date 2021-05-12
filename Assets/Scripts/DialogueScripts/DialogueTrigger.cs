@@ -10,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private Dialogue dialogue;
     private bool isSpeaking;
+    private bool hasSpokenOnce;
 
     private DialogueManager dialogueManager;
 
@@ -18,6 +19,15 @@ public class DialogueTrigger : MonoBehaviour
         string jsonString = File.ReadAllText("Assets/Scripts/Dialogue/" + filepath);
         dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
         dialogueManager = FindObjectOfType<DialogueManager>();
+
+        if (!System.String.IsNullOrEmpty(jsonString))
+        {
+
+        }
+        else
+        {
+            hasSpokenOnce = true;
+        }
     }
 
     public void Update()
