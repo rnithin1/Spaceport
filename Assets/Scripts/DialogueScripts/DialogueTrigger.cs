@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text;
+using System.IO;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public string filepath;
+
+    private Dialogue dialogue;
     private bool isSpeaking;
 
     private DialogueManager dialogueManager;
 
     public void Start()
     {
+        string jsonString = File.ReadAllText("Assets/Scripts/Dialogue/" + filepath);
+        dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
