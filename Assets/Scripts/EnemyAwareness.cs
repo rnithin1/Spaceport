@@ -8,6 +8,7 @@ public class EnemyAwareness : MonoBehaviour
     public bool isAggro;
     public float awarenessRadius = 8f;
     public bool isNPC; // enemy or NPC
+    private float _shootingTime;
 
     private Transform playerTransform;
 
@@ -27,8 +28,16 @@ public class EnemyAwareness : MonoBehaviour
 
         if (isAggro)
         {
+            _shootingTime += Time.deltaTime;
+            if(_shootingTime > 1) Shot();
             // GetComponent<MeshRenderer>().material = aggroMat;
         }
+    }
+
+    private void Shot()
+    {
+        _shootingTime = 0;
+        GameObject.FindWithTag("MyHealthBar").GetComponent<MyHealthBar>().Damage(0.1f);
     }
 
     //void OnTriggerEnter(Collider other)
