@@ -25,6 +25,12 @@ public class DialogueTrigger : MonoBehaviour
 
         if (!System.String.IsNullOrEmpty(jsonString))
         {
+            string[] temp = new string[dialogue.sentences.Length + 1];
+            for (int i = 0; i < dialogue.sentences.Length; i++)
+            {
+                temp[i + 1] = dialogue.sentences[i];
+            }
+            dialogue.sentences = temp; 
             hasSpokenOnce = false;
         }
         else
@@ -39,7 +45,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             Destroy(exclamation);
         }
-        if (dialogueManager.isSpeaking && Input.GetKeyDown(KeyCode.F))
+        if (dialogueManager.isSpeaking && hasSpokenOnce && Input.GetKeyDown(KeyCode.F))
         {
             dialogueManager.DisplayNextSentence();
         }
@@ -55,7 +61,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (isInTrigger && !dialogueManager.isSpeaking && Input.GetMouseButtonUp(1))
+        if (isInTrigger && !dialogueManager.isSpeaking && Input.GetKeyDown(KeyCode.F))
         {
             hasSpokenOnce = true;
             dialogueManager.StartDialogue(dialogue);
