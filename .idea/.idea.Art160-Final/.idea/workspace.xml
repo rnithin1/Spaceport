@@ -50,6 +50,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Ballet/BazookaBallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyHealthBar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rYwrPPKmZTbsUAle4KWveCX1Ij" />
