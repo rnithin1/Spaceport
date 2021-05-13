@@ -1,38 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
+// Patrol.cs
 using UnityEngine;
-
 using UnityEngine.AI;
+using System.Collections;
+
 
 public class WalkAfterTalking : MonoBehaviour
 {
 
-    public Transform location;
+    public Transform points;
+    private int destPoint = 0;
+    private NavMeshAgent agent;
     private DialogueManager dialogueManager;
     private DialogueTrigger dialogueTrigger;
-    private NavMeshAgent agent;
+    private bool hasSet;
 
-    public void Start()
+
+    void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         dialogueManager = FindObjectOfType<DialogueManager>();
         dialogueTrigger = GetComponent<DialogueTrigger>();
-        agent = GetComponent<NavMeshAgent>();
+
+        // Disabling auto-braking allows for continuous movement
+        // between points (ie, the agent doesn't slow down as it
+        // approaches a destination point).
+        agent.autoBraking = true;
+        hasSet = false;
     }
 
-    // Update is called once per frame
+
+    void GotoNextPoint()
+    {
+        // Returns if no points have been set up
+
+        // Set the agent to go to the currently selected destination.
+        //agent.destination = points[destPoint].position;
+        agent.SetDestination(points.position);
+        transform.LookAt(points);
+
+        // Choose the next point in the array as the destination,
+        // cycling to the start if necessary.
+    }
+
+
     void Update()
     {
-        
-        //if (dialogueTrigger.hasSpokenOnce && !dialogueManager.isSpeaking)
-        //{
-        //    agent.destination = location.position;
-        //}
-        if (agent.remainingDistance < 0.5f)
+        // Choose the next destination point when the agent gets
+        // close to the current one.
+        if (dialogueTrigger.hasSpokenOnce && !dialogueManager.isSpeaking && !hasSet)
         {
-            //agent.SetDestination(transform.position);
+            hasSet = true;
+            GotoNextPoint();
         }
-           agent.SetDestination(FindObjectOfType<PlayerMove>().transform.position);
+        else if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        {
+            agent.SetDestination(transform.position);
+        }
     }
-
-    
 }

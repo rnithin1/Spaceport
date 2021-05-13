@@ -3041,7 +3041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266578, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: Notkee
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266582, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_RootOrder
