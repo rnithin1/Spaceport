@@ -23,19 +23,20 @@ public class TeleporterOutside : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            StopAllCoroutines();
             StartCoroutine(TeleportAndFadeIn(other));
         }
     }
 
     IEnumerator TeleportAndFadeIn(Collider other)
     {
-        //StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(true));
+        StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(true));
         yield return new WaitForSeconds(2);
 
         LookAtWallNormal(other);
         SceneManager.LoadScene(1);
 
-        //StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
+        StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
     }
 
     void LookAtWallNormal(Collider other)

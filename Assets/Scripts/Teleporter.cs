@@ -25,6 +25,7 @@ public class Teleporter : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            StopAllCoroutines();
             StartCoroutine(TeleportAndFadeIn(other));
         }
     }
