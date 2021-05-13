@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: NPC 6
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: NPC 6
+    m_Hash: -1039229899
+    m_CategoryList:
+    - m_Name: Front_0
+      m_Hash: 1959060192
+      m_Sprite: {fileID: -5519487946963870569, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Front_1
+      m_Hash: 63165046
+      m_Sprite: {fileID: 8042693822765178336, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Front_2
+      m_Hash: -1698004020
+      m_Sprite: {fileID: -1049146674515705202, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Front_3
+      m_Hash: -305286310
+      m_Sprite: {fileID: 4815394574088444975, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Left_0
+      m_Hash: -825914643
+      m_Sprite: {fileID: -6339357786500121887, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Left_1
+      m_Hash: -1178420613
+      m_Sprite: {fileID: -5436808004982913155, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Left_2
+      m_Hash: 550235073
+      m_Sprite: {fileID: 1342756386400122928, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Left_3
+      m_Hash: 1473043287
+      m_Sprite: {fileID: -4036371021293389402, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Back_0
+      m_Hash: 569071906
+      m_Sprite: {fileID: -1651240791281256, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Back_1
+      m_Hash: 1458334132
+      m_Sprite: {fileID: -1595968807208313081, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Back_2
+      m_Hash: -807061490
+      m_Sprite: {fileID: -6227671317050382534, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Back_3
+      m_Hash: -1193146216
+      m_Sprite: {fileID: -124985876091957143, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Right_0
+      m_Hash: -1688224648
+      m_Sprite: {fileID: 6626092303146636581, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Right_1
+      m_Hash: -329741074
+      m_Sprite: {fileID: -5135449944251353949, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Right_2
+      m_Hash: 1968299348
+      m_Sprite: {fileID: -9065515190005658528, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
+    - m_Name: Right_3
+      m_Hash: 39251394
+      m_Sprite: {fileID: -4276737842621376369, guid: eaaeba187e0f943a1b9ae4fa3fe0a159, type: 3}
