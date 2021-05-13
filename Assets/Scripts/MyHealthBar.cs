@@ -40,7 +40,7 @@ public class MyHealthBar : MonoBehaviour
 
     private void GameOver()
     {
-        StartCoroutine(GameObject.FindWithTag("Canvas").GetComponent<UIController>().FadeBlackOutSquare());
+        StartCoroutine(GameObject.Find("Canvas").GetComponent<UIController>().FadeBlackOutSquare());
         SceneManager.LoadScene(0);
     }
 }
