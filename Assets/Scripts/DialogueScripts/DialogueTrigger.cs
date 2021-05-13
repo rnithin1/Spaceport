@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private Dialogue dialogue;
     private bool isSpeaking;
-    private bool hasSpokenOnce;
+    public bool hasSpokenOnce;
     private bool isInTrigger;
 
     public GameObject exclamation;
