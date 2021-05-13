@@ -34,7 +34,7 @@ public class TeleporterOutside : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         LookAtWallNormal(other);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
         StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
     }

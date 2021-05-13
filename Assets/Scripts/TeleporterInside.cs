@@ -33,7 +33,7 @@ public class TeleporterInside : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         LookAtWallNormal(other);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
         //StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
     }

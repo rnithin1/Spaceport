@@ -59,20 +59,20 @@ public class TeleportFloor : MonoBehaviour
         if (kcode == KeyCode.Alpha1)
         {
             elevatorMenu.SetActive(false);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         if (kcode == KeyCode.Alpha2)
         {
             elevatorMenu.SetActive(false);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
 
         }
 
         if (kcode == KeyCode.Alpha3)
         {
             elevatorMenu.SetActive(false);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
 
         }
 
