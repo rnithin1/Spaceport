@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3669024455985946638, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: filepath
-      value: npc_floor_2_3.json
+      value: partner_scene_outside_base.json
       objectReference: {fileID: 0}
     - target: {fileID: 3669024457285867482, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -196,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266582, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 188.9
+      value: 171.4
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266582, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266582, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100.9
+      value: 78.5
       objectReference: {fileID: 0}
     - target: {fileID: 4413159216911266582, guid: f719c4d1132aa4dccb83876e79db4bc3, type: 3}
       propertyPath: m_LocalRotation.w
