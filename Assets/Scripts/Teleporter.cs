@@ -39,7 +39,7 @@ public class Teleporter : MonoBehaviour
         Vector3 closestPoint = coll.ClosestPointOnBounds(other.transform.position);
         LookAtWallNormal(other);
         float distance = Vector3.Distance(closestPoint, other.transform.position);
-        Vector3 new_pos = other.transform.position + 2 * distance * other.transform.forward;
+        Vector3 new_pos = other.transform.position + 3 * distance * other.transform.forward;
         charController.transform.position = new Vector3(new_pos.x, other.transform.position.y, new_pos.z);
         charController.enabled = true;
         StartCoroutine(canvas.GetComponent<UIController>().FadeBlackOutSquare(false));
