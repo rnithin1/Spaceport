@@ -41,6 +41,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PickUpItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Ballet/BazookaBallet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rYwrPPKmZTbsUAle4KWveCX1Ij" />
@@ -90,6 +91,7 @@
       <workItem from="1619245651551" duration="1994000" />
       <workItem from="1620193806109" duration="18510000" />
       <workItem from="1620315770682" duration="7670000" />
+      <workItem from="1620930610091" duration="3497000" />
     </task>
     <servers />
   </component>
