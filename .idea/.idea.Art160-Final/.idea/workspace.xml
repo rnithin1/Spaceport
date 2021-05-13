@@ -10,6 +10,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp/PickUpItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCondition.cs" root0="FORCE_HIGHLIGHTING" />
@@ -38,10 +46,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/ReloadLimitBreak.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/DashPower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUIController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PickUpItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Ballet/BazookaBallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyHealthBar.cs" />
     </changedPaths>
   </component>
@@ -92,7 +100,8 @@
       <workItem from="1619245651551" duration="1994000" />
       <workItem from="1620193806109" duration="18510000" />
       <workItem from="1620315770682" duration="7670000" />
-      <workItem from="1620930610091" duration="4269000" />
+      <workItem from="1620930610091" duration="3497000" />
+      <workItem from="1620937330383" duration="308000" />
     </task>
     <servers />
   </component>
