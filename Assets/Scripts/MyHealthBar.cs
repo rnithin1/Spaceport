@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MyHealthBar : MonoBehaviour
@@ -39,6 +40,7 @@ public class MyHealthBar : MonoBehaviour
 
     private void GameOver()
     {
-        StartCoroutine(GameObject.FindWithTag("Canvas").GetComponent<UIController>().FadeBlackOutSquare());
+        StartCoroutine(GameObject.Find("Canvas").GetComponent<UIController>().FadeBlackOutSquare());
+        SceneManager.LoadScene(0);
     }
 }
