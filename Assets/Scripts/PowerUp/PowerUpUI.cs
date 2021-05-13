@@ -47,7 +47,7 @@ public class PowerUpUI : MonoBehaviour
         }
         var rectTransform = GetComponent<RectTransform>();
         var pos = rectTransform.position;
-        pos.y -= (Height + 10) * index;
+        pos.y += (Height + 10) * index;
         rectTransform.position = pos;
     }
 }
