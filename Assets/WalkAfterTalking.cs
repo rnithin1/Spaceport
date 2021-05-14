@@ -52,7 +52,7 @@ public class WalkAfterTalking : MonoBehaviour
             hasSet = true;
             GotoNextPoint();
         }
-        else if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        else if (dialogueTrigger.hasSpokenOnce && !dialogueManager.isSpeaking && !agent.pathPending && agent.remainingDistance < 0.5f)
         {
             Destroy(this.gameObject);
         }
