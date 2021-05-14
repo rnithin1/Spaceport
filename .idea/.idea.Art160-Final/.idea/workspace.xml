@@ -40,7 +40,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/QuickGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCondition.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Bazooka.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/Powers/ReloadLimitBreak.cs" />
@@ -51,6 +50,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp/PowerUpUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyHealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rYwrPPKmZTbsUAle4KWveCX1Ij" />

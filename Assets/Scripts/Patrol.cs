@@ -52,9 +52,9 @@ public class Patrol : MonoBehaviour
         {
             agent.SetDestination(transform.position);
         }
-        else if (!agent.pathPending && agent.remainingDistance < 0.5f)
-        {
-            GotoNextPoint();
-        }
+        // else if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        // {
+        //     GotoNextPoint();
+        // }
     }
 }
