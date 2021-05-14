@@ -1,7 +1,12 @@
 {
     "name": "Thurare",
     "sentences": [
-        "Don't keep the general waiting.",
-        "He's on the first floor."
+        "This text is temporary. There are a lot of bugs in this game.",
+        "As you might have noticed, press F to talk to people. The cylinder next to Ukabe is the elevator. Go near it to change floors.",
+        "Doors will be represented by walls of a different texture. The teleport is a bit buggy, so make sure to walk into the door head-on instead of at an angle.",
+        "Or, you may be teleported outside of the base itself.",
+        "The black wall on the first floor is the exit to leave the base. Make sure to talk to the general before you leave.",
+        "By the way, don't keep her waiting.",
+        "She's on the first floor."
     ]
 }
