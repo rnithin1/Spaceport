@@ -6202,7 +6202,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2060120111}
   - {fileID: 2088629445}
   - {fileID: 147149056}
   - {fileID: 1831807604}
@@ -6210,6 +6209,7 @@ RectTransform:
   - {fileID: 1335770511}
   - {fileID: 330948903}
   - {fileID: 1076826493}
+  - {fileID: 2060120111}
   - {fileID: 867055347}
   - {fileID: 1962617692}
   - {fileID: 1931248319}
