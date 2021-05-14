@@ -54,7 +54,7 @@ public class WalkAfterTalking : MonoBehaviour
         }
         else if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
-            agent.SetDestination(transform.position);
+            Destroy(this.gameObject);
         }
     }
 }
