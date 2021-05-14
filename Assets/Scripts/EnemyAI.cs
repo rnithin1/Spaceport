@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            enemyNavMeshAgent.SetDestination(transform.position);
+//            enemyNavMeshAgent.SetDestination(transform.position);
         }
     }
 }
