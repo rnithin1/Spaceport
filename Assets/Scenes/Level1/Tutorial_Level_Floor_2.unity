@@ -1873,6 +1873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2297683330355444748, guid: c1d194e81e2d6493f8662785cd1fff9b, type: 3}
+      propertyPath: _gunSwitch
+      value: 
+      objectReference: {fileID: 1795616485}
     - target: {fileID: 2297683330362721852, guid: c1d194e81e2d6493f8662785cd1fff9b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3322,6 +3326,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 2714507814979719625, guid: a6b3e77a39e9143168a21c87f7c7b8b9, type: 3}
   m_PrefabInstance: {fileID: 1795616483}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1795616485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2714507814914173109, guid: a6b3e77a39e9143168a21c87f7c7b8b9, type: 3}
+  m_PrefabInstance: {fileID: 1795616483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8c9d2d2ab236e41945afd8e7bca166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1801735116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -597319784593729185, guid: 310dcbb37c897454f8956441ec479fc2, type: 3}

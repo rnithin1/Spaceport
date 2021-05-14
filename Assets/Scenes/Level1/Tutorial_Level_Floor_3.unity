@@ -175,6 +175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2297683330355444748, guid: c1d194e81e2d6493f8662785cd1fff9b, type: 3}
+      propertyPath: _gunSwitch
+      value: 
+      objectReference: {fileID: 870201071}
     - target: {fileID: 2297683330362721852, guid: c1d194e81e2d6493f8662785cd1fff9b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1996,6 +2000,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &870201071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2714507814914173109, guid: a6b3e77a39e9143168a21c87f7c7b8b9, type: 3}
+  m_PrefabInstance: {fileID: 870201067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8c9d2d2ab236e41945afd8e7bca166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &964009792 stripped
