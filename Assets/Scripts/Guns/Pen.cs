@@ -53,6 +53,8 @@ public class Pen : GunClass
     {
         var player = GameObject.FindWithTag("Player").transform;
         // Get the initial pen position from the mouse position
+        Debug.Log("Input.mousePosition.x " + Input.mousePosition.x);
+        Debug.Log("Input.mousePosition.y " + Input.mousePosition.y);
         Vector3 pos = Camera.main.ScreenToWorldPoint(
             new Vector3(
            Input.mousePosition.x,
